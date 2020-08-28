@@ -44,6 +44,18 @@ public class Test {
 						System.out.println("Invalid input");
 					}
 				}
+				else if (terms[0].trim().equalsIgnoreCase("exists"))
+				{
+					try
+					{
+					int num = Integer.parseInt(terms[1]);
+					System.out.println(set.exists(num));
+				}
+					catch (Exception e)
+					{
+						System.out.println("Invalid input")
+;					}
+				}
 				else 
 				{
 					System.out.println("Incorrect command");
